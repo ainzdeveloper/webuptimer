@@ -7,7 +7,13 @@ const ejs = require('ejs');
 const fs = require('fs');
 const chalk = require('chalk');
 const moment = require('moment-timezone');
-
+const { defineConfig } = require('vite');
+export default defineConfig({
+  plugins: [],
+  server: {
+    host: '0.0.0.0',
+  }
+})
 const app = new Koa();
 const router = new Router();
 const urlsFilePath = 'urls.json';
