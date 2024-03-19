@@ -8,7 +8,7 @@ const fs = require('fs');
 const chalk = require('chalk');
 const moment = require('moment-timezone');
 const { defineConfig } = require('vite');
-export default defineConfig({
+defineConfig({
   plugins: [],
   server: {
     host: '0.0.0.0',
